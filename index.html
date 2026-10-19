@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronCheck — игры и FPS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="logo">IC</div>
+      <div><h1>IronCheck</h1><p>Проверь возможности своего ПК</p></div>
+    </header>
+    <section class="info">
+      <h2>FPS в играх</h2>
+      <p>Выбери игру. Бот рассчитает примерный FPS по сохранённой сборке и данным SQLite.</p>
+      <div class="tag">1920×1080 · Средние настройки · RT выключен</div>
+    </section>
+    <h2 class="section-title">Выбрать игру</h2>
+    <div class="games" id="games"></div>
+    <p id="selection" class="selection" aria-live="polite">Игра не выбрана</p>
+    <button id="send-button" type="button" disabled>Проверить FPS</button>
+    <p class="hint">Результаты — учебная оценка, не фактические бенчмарки.</p>
+    <p id="notice" class="notice" aria-live="polite"></p>
+  </main>
+</body>
+</html>
